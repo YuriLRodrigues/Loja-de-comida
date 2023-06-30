@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/dataProducts.js"></script>
+  <script defer src="./assets/js/scriptrz.js" type="module"></script>
+  <title>Loja de Comida</title>
+</head>
+<body>
+  <h1>Shop now</h1>
+  <!-- ================ Header / Nav ============== -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" class="navItem activeMenu all-category category-btn">Todos os produtos</a></li>
+        <li><a href="#" class="navItem horti-category category-btn">Hortifruit</a></li>
+        <li><a href="#" class="navItem pani-category category-btn">Panificadora</a></li>
+        <li><a href="#" class="navItem lat-category category-btn">Laticínios</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar por" id="search-input"><i class='bx bx-search-alt-2' id="search-btn"></i>
+    </div>
+  </header>
+
+  <!-- ============== Cart Value ============== -->
+  <article class="product-cart-info active-cart"> <!--REMOVER O ACTIVE-->
+    <div class="cart-info">
+      <i class='bx bx-info-circle'></i><p>Valor total dos produtos da sessão selecionada</p>
+    </div>
+    <p class="cart-value">R$ 44,00</p>
+  </article>
+
+  <!-- ======== Section Products Items ======== -->
+  <section class="productsForCategory">
+
+  </section>
+
+</body>
+</html>

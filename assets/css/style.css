@@ -1,0 +1,115 @@
+h1 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 2rem;
+}
+.navbar li {
+  transition: all .6s ease-in;
+}
+.navbar .navItem {
+  cursor: pointer;
+  color: #fff;
+  transition: all .6s ease-in;
+  padding: 0.6rem;
+  border: 1px solid #12B886;
+  border-radius: 14px;
+  color: #12B886;
+  font-weight: 500;
+}
+.navbar .navItem.activeMenu {
+  cursor: pointer;
+  color: #fff;
+  background-color: #12B886;
+  transition: all .6s ease-in;
+  padding: 0.6rem;
+  border-radius: 14px;
+}
+.navbar li:hover {
+  transform: translateY(5px);
+}
+.search-bar {
+  display: flex;
+  position: relative;
+}
+.search-bar input {
+  border: none;
+  padding: 5px;
+  color: #000;
+  max-width: 250px;
+  outline: none;
+  margin-right: 15px;
+}
+.search-bar input::placeholder {
+  color: #000;
+}
+.search-bar i {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #12B886;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+.product-cart-info.active-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 30px;
+}
+.product-cart-info .cart-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-info i {
+  margin-right: 7px;
+  color: #12B886;
+  font-size: 1.3rem;
+}
+.productsForCategory {
+  display: flex;
+}
+.sectionAllItems {
+  transition: all .6s ease-in;
+}
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.product-grid .item-card {
+  position: relative;
+  width: 240px;
+  height: auto;
+  background-color: rgb(237, 237, 237);
+  padding: 0.4rem;
+  border-radius: 20px;
+}
+.item-card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
