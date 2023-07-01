@@ -17,7 +17,7 @@ const produtos = [
   },
   {
       id: 2,
-      nome: 'Morango 5kg',
+      nome: 'Morango',
       preco: '7.00',
       secao: 'Hortifruti',
       categoria: 'fruta',
@@ -112,9 +112,9 @@ const produtos = [
   },
   {
       id: 8,
-      nome: 'Iogurt de Morango',
+      nome: 'Iogurte',
       preco: '3.00',
-      secao: 'Hortifruti',
+      secao: 'Laticínio',
       categoria: 'Yorgut',
       img: './assets/img/iogurte.png',
       promocao: true,
@@ -124,6 +124,5 @@ const produtos = [
           'Morango',
           'Açúcar Refinado',
       ]
-
   },
 ]

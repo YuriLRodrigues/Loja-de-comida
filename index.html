@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script defer src="./assets/js/dataProducts.js"></script>
-  <script defer src="./assets/js/scriptrz.js" type="module"></script>
+  <script defer src="./assets/js/script.js" type="module"></script>
+  <link rel="shortcut icon" href="./assets/img/logo-loja.png" type="image/x-icon">
   <title>Loja de Comida</title>
 </head>
 <body>
@@ -27,18 +28,24 @@
     </div>
   </header>
 
-  <!-- ============== Cart Value ============== -->
-  <article class="product-cart-info active-cart"> <!--REMOVER O ACTIVE-->
-    <div class="cart-info">
-      <i class='bx bx-info-circle'></i><p>Valor total dos produtos da sessão selecionada</p>
-    </div>
-    <p class="cart-value">R$ 44,00</p>
-  </article>
-
   <!-- ======== Section Products Items ======== -->
-  <section class="productsForCategory">
-
-  </section>
-
+  <main class="home-content">
+    <section class="productsForCategory"></section>
+    <aside class="cart-menu">
+      <div class="cart-text">
+        <i class='bx bx-cart-download'></i><h3>Carrinho</h3>
+      </div>
+      <section class="cart-items">
+        <div class="empty-items">
+          <p class="empty-info">Por enquanto não temos produtos no carrinho</p>
+          <i class='bx bxs-shopping-bags empty-icon' ></i>
+        </div>
+      </section>
+      <section class="items-qtties-values">
+        <p class="cart-quantities">Quantities: </p>
+        <p class="cart-value">Price: </p>
+      </section>
+    </aside>
+  </main>
 </body>
 </html>
